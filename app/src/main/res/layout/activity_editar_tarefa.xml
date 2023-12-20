@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarTarefaActivity"
+    android:background="@color/lightBlue">
+
+    <EditText
+        android:id="@+id/editTextNomeTarefa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:hint="Nome da Tarefa" />
+
+    <EditText
+        android:id="@+id/editTextDataInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNomeTarefa"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:hint="Data de Início" />
+
+    <EditText
+        android:id="@+id/editTextDataFim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDataInicio"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:hint="Data de Fim" />
+
+    <EditText
+        android:id="@+id/editTextHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDataFim"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:hint="Horário" />
+
+    <EditText
+        android:id="@+id/editTextStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextHorario"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:hint="Status" />
+
+    <EditText
+        android:id="@+id/editTextResponsavel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStatus"
+        android:hint="Responsável"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btnSalvarEdicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextResponsavel"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3F51B5"
+        android:textColor="@color/white"
+        android:text="Salvar Edição" />
+
+</RelativeLayout>
